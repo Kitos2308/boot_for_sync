@@ -1,0 +1,35 @@
+log:
+  level: DEBUG
+  type: json
+
+sentry:
+  dsn: ""
+  environment: dev
+  log_level: WARNING
+
+kafka: 127.0.0.1:9093
+
+force_send_notification: false
+pagination_page_size: 1
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  db: 0
+
+prometheus:
+  enable: false
+  port: 8000
+
+minio:
+  type: minio
+  host: 127.0.0.1
+  port: 9000
+  access_key: minioadmin
+  secret_key: minioadmin
+  notify_topic: minionotify
+
+bucket_names:
+  - bucket1
+  - bucket2
+
